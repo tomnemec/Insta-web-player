@@ -47,7 +47,7 @@ body {
 .sidebar {
   width: 150px;
   height: 100%;
-  padding: 10px 0 0 10px;
+  padding: 0 10px 0 10px;
   background: #615e5e;
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -64,6 +64,10 @@ body {
 }
 .sidebar ul li {
   margin: 10px 10px;
+  cursor: pointer;
+}
+.sidebar ul li:hover {
+  color: #837e7e;
 }
 .sidebar ul li i {
   color: rgb(247, 39, 39);
@@ -81,6 +85,7 @@ body {
   border: #e7e4e4 1px solid;
 }
 .main {
+  padding: 20px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -101,6 +106,8 @@ body {
 .song-info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-left: 20px;
 }
 .song-name {
@@ -127,6 +134,56 @@ body {
   border: none;
   padding: 0 10px;
   border-radius: 5px;
-  margin: 40px 0;
   font-size: 14px;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background: #c2a0a0;
+}
+.song-list {
+  margin: 0;
+  padding: 0 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.song-list li:nth-child(odd) {
+  background: #5f5d5d;
+}
+.song-list li:nth-child(1) {
+  background: none;
+  color: #e7e4e4;
+  border-radius: 0;
+}
+.song-list-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e7e4e4;
+}
+.song-list li {
+  width: 90%;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.song-name-list {
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.song-artist-list {
+  font-size: 12px;
+  font-weight: 400;
+  color: #b4abab;
+  margin-left: 10px;
+}
+.song-duration-list {
+  font-size: 12px;
+  font-weight: 400;
+  color: #b4abab;
+  margin-left: 10px;
 }
