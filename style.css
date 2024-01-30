@@ -1,0 +1,132 @@
+:root {
+  --primary-color: #b4abab;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #8b8a8a;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #fff;
+}
+.player {
+  position: relative;
+  display: flex;
+  width: 600px;
+  height: 400px;
+  background: #fff;
+  border: 1px solid #e7e4e4;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.row-dots {
+  z-index: 5;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: red;
+}
+.orange {
+  background: orange;
+}
+.green {
+  background: green;
+}
+.sidebar {
+  width: 150px;
+  height: 100%;
+  padding: 10px 0 0 10px;
+  background: #615e5e;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.menu-header {
+  color: #b4abab;
+  font-weight: 600;
+  font-size: 14px;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar ul li {
+  margin: 10px 10px;
+}
+.sidebar ul li i {
+  color: rgb(247, 39, 39);
+  font-size: 19px;
+}
+#search {
+  background: #b4abab;
+  width: 120px;
+  height: 30px;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  border-radius: 5px;
+  margin: 40px 0;
+  border: #e7e4e4 1px solid;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #4d4d4d;
+}
+.current-song {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.current-song img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.song-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.song-name {
+  font-size: 20px;
+  font-weight: 600;
+}
+.song-artist {
+  font-size: 16px;
+  font-weight: 400;
+  color: #b4abab;
+}
+.btn-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+.btn-primary {
+  background: red;
+  color: #fffdfd;
+  width: 80px;
+  height: 30px;
+  border: none;
+  padding: 0 10px;
+  border-radius: 5px;
+  margin: 40px 0;
+  font-size: 14px;
+}

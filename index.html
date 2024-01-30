@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="player">
+      <div class="row-dots">
+        <div class="dot"></div>
+        <div class="dot orange"></div>
+        <div class="dot green"></div>
+      </div>
+      <div class="sidebar">
+        <input placeholder="...search" type="text" id="search" />
+        <span class="menu-header">Menu</span>
+        <ul>
+          <li><i class="bi bi-book"></i> Library</li>
+          <li><i class="bi bi-star"></i> Favourite</li>
+          <li><i class="bi bi-sliders"></i> Settings</li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="current-song">
+          <img src="img.jpg" alt="" />
+          <div class="song-info">
+            <span class="song-name">Song Name</span>
+            <span class="artist-name">Artist Name</span>
+            <div class="btn-row">
+              <button class="btn-primary">
+                <i class="bi bi-play-circle-fill"></i> Play</button
+              ><button class="btn-primary">
+                <i class="bi bi-shuffle"></i>Shuffle
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
